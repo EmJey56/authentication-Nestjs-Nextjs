@@ -1,0 +1,28 @@
+.homeContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide any overflow */
+  }
+  
+  .backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the whole screen without distortion */
+    z-index: -1; /* Place the video behind the content */
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    font-size: 2rem; /* Font size */
+    text-align: center;
+    z-index: 1; /* Ensure the text appears above the video */
+  }
+  
